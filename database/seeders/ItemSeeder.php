@@ -1,20 +1,18 @@
 <?php
 
-
 namespace Database\Seeders;
 
-use App\Models\Barang;
-
+use App\Models\item;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class BarangSeeder extends Seeder
+class ItemSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Barang::factory(10)->create();
+        item::factory(10)->create();
     }
 }
